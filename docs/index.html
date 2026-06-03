@@ -161,14 +161,14 @@
   #welcome p { font-size: clamp(15px, 2.8vw, 17px); color: var(--text-muted); max-width: 500px; line-height: 1.65; margin-bottom: 32px; }
   #welcome .hint { font-size: 13px; color: var(--text-muted); opacity: 0.55; margin-top: 14px; }
 
-  .welcome-pills { display: flex; align-items: center; gap: 10px; margin-bottom: 36px; flex-wrap: wrap; justify-content: center; }
-  .pill {
-    font-size: 12px; font-weight: 600; letter-spacing: 0.3px;
-    padding: 6px 14px; border-radius: 100px;
-    background: var(--badge-bg); border: 1px solid var(--badge-border);
-    color: var(--badge-color);
+  .exclusivo-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.2px;
+    padding: 5px 13px; border-radius: 100px; margin-bottom: 28px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text-soft);
   }
-  .pill-sep { font-size: 14px; color: var(--text-muted); opacity: 0.4; }
+  .exclusivo-tag svg { flex-shrink: 0; }
 
   .btn-start {
     padding: 16px 48px; background: var(--gradient); border-radius: 12px;
@@ -382,17 +382,14 @@
       </svg>
     </div>
 
-    <div class="mkbz-badge"><span class="badge-dot"></span>DIAGNÓSTICO ESTRATÉGICO · EXCLUSIVO PARA FISIOTERAPEUTAS</div>
+    <div class="mkbz-badge"><span class="badge-dot"></span>DIAGNÓSTICO ESTRATÉGICO</div>
 
-    <h1>Você não precisa postar mais.<br>Você precisa de <em>posicionamento.</em></h1>
-    <p>Em uma sessão estratégica, mapeamos seu branding, entendemos seu perfil e desenhamos o funil certo — para os pacientes ideais chegarem até você, não o contrário.</p>
+    <h1>O que está impedindo os pacientes certos de <em>chegarem até você?</em></h1>
+    <p>Em uma sessão rápida, identificamos os gargalos do seu posicionamento digital e construímos um plano prático — para posicionar sua marca, construir autoridade e atrair pacientes que fecham tratamentos.</p>
 
-    <div class="welcome-pills">
-      <span class="pill">Branding</span>
-      <span class="pill-sep">·</span>
-      <span class="pill">Planejamento</span>
-      <span class="pill-sep">·</span>
-      <span class="pill">Estrutura de funil</span>
+    <div class="exclusivo-tag">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent)"><polyline points="20 6 9 17 4 12"/></svg>
+      Exclusivo para fisioterapeutas
     </div>
 
     <button class="btn-start" onclick="startForm()">Quero meu diagnóstico →</button>
